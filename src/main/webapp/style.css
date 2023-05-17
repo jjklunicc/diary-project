@@ -1,0 +1,271 @@
+@charset "EUC-KR";
+
+/* ÀüÃ¼Àû¿ë */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	font-size: 18px;
+	text-decoration: none;
+	color: #8041D9;
+}
+table, td, th{
+	padding: 5px;
+	text-align: left;
+}
+th{
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+.text-right{
+	text-align: right;
+}
+/* home.jsp */
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1280px;
+	height: 60px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ECEBFF;
+}
+nav a+a{
+	margin-left: 20px;
+}
+.homepage-title{
+	font-size: 40px;
+	font-weight: bold;
+}
+.icon{
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	border-radius: 4px;
+}
+.icon:hover{
+	background-color: #C7C4FF;
+}
+.content{
+	position:relative;
+	display: flex;
+	width: 1280px;
+	height: 720px;
+	margin: 0 auto;
+	padding: 10px 20px 20px;
+	background-color: #ECEBFF;
+}
+.inner-content{
+	width: 50%;
+	padding: 20px;
+}
+.inner-content + .inner-content{
+	margin-left: 50px;
+}
+.title{
+	margin-bottom: 20px;
+	background-color: #F7F7F7;
+	text-align:center;
+}
+.flex-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.list + .list{
+	margin-top: 10px;
+}
+.sub-title{
+	margin-bottom: 10px;
+}
+.schedule-box{
+	display: flex;
+}
+.schedule-box > *{
+	width: 33%;
+}
+.information{
+	position:absolute;
+	bottom: 20%;
+	left: 30%;
+	width: 40%;
+	height: 30%
+}
+.information ul, .information li{
+	width: 95%;
+	margin-left: 5%;
+}
+/*noticeList.jsp*/
+.full-content{
+	position:relative;
+	width: 100%;
+	padding: 20px;
+}
+.full-content a{
+	font-size: 22px;
+}
+.full-content .list+.list{
+	margin-top: 20px;
+}
+.full-content .sub-title{
+	margin-bottom: 20px;
+}
+.pagination{
+	position: absolute;
+	bottom: 0;
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.pagination div{
+	width: 33%;
+	text-align: center;
+}
+
+/*scheduleList.jsp*/
+.table-border{
+	border: 2px solid #333333;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+.table-border td{
+	border: 2px solid #333333;
+}
+.today{
+	background-color: #C7C4FF;
+}
+.sunday a{
+	color: red;
+}
+.saturday a{
+	color: blue;
+}
+.empty-day{
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	padding-bottom: 60px;
+}
+a:hover{
+	color: rgba(0, 0, 0, 0.7);
+}
+.schedule-wrapper{
+	position:relative;
+	width: 170px;
+	height: 90px;
+	overflow: hidden;
+}
+.schedule{
+	display: flex;
+	flex-wrap: wrap;
+	width: 150px;
+	height: 60px;
+}
+.schedule div{
+	width: fit-content;
+	height: fit-content;
+	padding: 0 5px;
+}
+/*inserNoticeForm*/
+.full-table{
+	width: 100%;
+	height: 80%;
+	padding: 20px;
+}
+.full-table input{
+	width: 100%;
+	height: 40px;
+	border-radius: 7px;
+	border: 1px solid darkgray;
+	padding: 7px;
+}
+.full-table textarea{
+	width: 100%;
+	border-radius: 7px;
+	border: 1px solid darkgray;
+	padding: 10px;
+	font-family: '¸¼Àº °íµñ';
+}
+.full-table button, .button{
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	width: 80%;
+	height: 50px;
+	border-radius: 7px;
+	border: 1px solid darkgray;
+	background-color: #ffffff;
+}
+.full-table button:hover{
+	background-color: whitesmoke;
+	cursor: pointer;
+}
+.button a{
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	color: #333333;
+}
+.button+.button{
+	bottom: 0;
+}
+.button:hover{
+	background-color: whitesmoke;
+	cursor: pointer;
+}
+/*scheduleListByDate*/
+.multi-input-table{
+	width:100%;
+}
+.multi-input-table td{
+	width: 30%;
+}
+.multi-input-table input{
+	width: 80%;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #333333;
+}
+.multi-input-table textarea{
+	width: 90%;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #333333;
+}
+.multi-input-table button{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	border: 1px solid darkgray;
+	background-color: #ffffff;
+}
+.multi-input-table button:hover{
+	background-color:whitesmoke;
+	cursor: pointer;
+}
+.scroll-table-wrapper{
+	position: relative;
+	overflow-y: auto;
+	width: 100%;
+	height: 350px;
+}
+.horizontal-table{
+	position:absolute;
+	width: 100%;
+}
+.horizontal-table input, .horizontal-table textarea{
+	width: 90%;
+	padding: 5px;
+	border-radius: 4px;
+	border: 1px solid #333333;
+}
+.horizontal-table .icon{
+	width: 30px;
+	height: 30px;
+}
