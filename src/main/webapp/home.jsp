@@ -42,9 +42,15 @@
 	}
 	
 	//년 월 일 값 각각 저장(redirection을 위해서)
-	String y = scheduleList.get(0).scheduleDate.substring(0, 4);
-	int m = Integer.parseInt(scheduleList.get(0).scheduleDate.substring(5, 7)) - 1;
-	String d = scheduleList.get(0).scheduleDate.substring(8);
+	String y = "";
+	int m = 0;
+	String d = "";
+	
+	if(scheduleList.size() != 0){
+		y = scheduleList.get(0).scheduleDate.substring(0, 4);
+		m = Integer.parseInt(scheduleList.get(0).scheduleDate.substring(5, 7)) - 1;
+		d = scheduleList.get(0).scheduleDate.substring(8);
+	}
   %>
 <!DOCTYPE html>
 <html>
